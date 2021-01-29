@@ -1,0 +1,207 @@
+* {margin: 0; padding: 0;}
+
+body, html {height: 100%; font-family: 'Fondamento', cursive;}
+
+a, ul {text-decoration: none; list-style: none;}
+hr {
+    height: 3px;
+    width: 220px;
+    background: #f23;
+    border: none;
+}
+
+@media only all and (min-width: 915px){
+    .menu {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #111111;
+        box-shadow: 0px -5px 10px #fff;
+    }
+    .menu img {width: 150px;}
+    .menu ul {
+        display: flex;
+        flex-flow: row;
+        font-family: 'Pirata one', cursive;
+        font-size: 18pt;
+        margin-right: 10%;
+    }
+    .menu li {padding: 14px 20px; margin-right: 10%;}
+
+    .menu ul li:hover {
+        background-color: #000000;
+        cursor: pointer;
+        color: #f23;
+        transition: all 0.5s;
+    }
+
+    .inicio {
+        width: 100%;
+        height: calc(100% - 60px);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .inicio img {width: 60%; margin-top: 100px; filter: drop-shadow(1px 1px 2px #000);}
+
+    .historia {
+        width: 100%;
+        height: calc(100% - 60px);
+        display: none;
+        flex-flow: column;
+        align-items: center;
+        background-image: url(../img/exploracao.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .historia article {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: justify;
+        font-size: 15pt;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .historia p {width: 80%; margin-top: 15px; filter: drop-shadow(0 0 1px #000);}
+    .historia img {margin-top: 20px; filter: drop-shadow(1px 1px 2px #000);}
+
+    .tropas {
+        width: 100%;
+        display: none;
+        flex-flow: column;
+        align-items: center;
+        background-image: url(../img/paisa.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .tropas article {
+        width: 85%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        font-size: 15pt;
+        margin: 30px 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .tropas img {width: 350px; height: 350px; border-radius: 5px;}
+    .tropas p {text-align: justify; margin: 5px 50px; filter: drop-shadow(0 0 1px #000);}
+
+    .titan {
+        width: 100%;
+        display: none;
+        flex-flow: column;
+        align-items: center;
+        background-image: url(../img/titan.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .titan h1 {font-family: 'Pirata one', cursive; font-size: 50pt; font-weight: normal; filter: drop-shadow(0 0 1px #000);}
+    .titan li img {width: 100%; height: 100%;}
+    .titan ul {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .titan li {
+        width: 300px;
+        height:300px;
+        background: #222;
+        margin: 30px 5px 0 5px;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    .titan li figcaption {
+        display: block;
+        width: 100%;
+        height: 45px;
+        position: relative;
+        bottom: 50px;
+        font-size: 15pt;
+        text-align: center;
+        text-shadow: 1px 1px #000;
+        background: #000000ad;
+    }
+    
+    .sobre li {display: none;}
+    .sobre {
+        width: 100%;
+        height: calc(100% - 60px);
+        display: none;
+        flex-flow: column;
+        align-items: center;
+        background-image: url(../img/titan.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #video {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        background-image: url(../img/finalsea.png);
+        background-size: cover;
+    }
+
+    #btn {
+        width: 15%;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15pt;
+        font-weight: bolder;
+        background-color: #f23;
+        padding: 20px;
+        margin-top: 5%;
+        border-radius: 2px;
+        color: #fff;
+        transition: all 0.5s;
+    }
+
+    #btn:hover {
+        background-color: #f11;
+        box-shadow: 3px 3px #fffc65;
+        transform: translateX(-3px);
+        transition: all 0.5s;
+    }
+}
+
+@media only all and (max-width: 915px){
+    body {
+        background-image: url(../img/cell.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    #backvideo{display: none;}
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #505050;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e1e1e;
+    border: 1px solid;
+    border-color: #3d3d3d;
+}
