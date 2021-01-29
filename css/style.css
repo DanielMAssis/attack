@@ -179,6 +179,7 @@ hr {
         transform: translateX(-3px);
         transition: all 0.5s;
     }
+    #mobile{display: none;}
 }
 
 @media only all and (max-width: 915px){
@@ -189,9 +190,25 @@ hr {
         background-size: cover;
         background-attachment: fixed;
     }
-    
     #backvideo{display: none;}
 
+    .menu {display: none;}
+    .inicio {display: none;}
+    .historia {display: none;}
+    .tropas {display: none;}
+    .titan {display: none;}
+    .sobre {display: none;}
+    #mobile {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40pt;
+        font-weight: bolder;
+        color: #fffc65;
+        text-shadow: 1px 0px #000;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 }
 
 ::-webkit-scrollbar-track {

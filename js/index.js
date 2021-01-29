@@ -41,12 +41,12 @@ $(document).ready(function(){
         $('.sobre li').css("display","none");
     });
 
-    $('.titan ul').find("li").click(function(){
+    /*$('.titan ul').find("li").click(function(){
         let id = ($(this).attr("id"));
         $(".sobre #"+ id).css("display","flex");
         $('.sobre').css("display","flex");
         $('.titan').css("display","none");
-    });
+    });*/
 
     $('#btn').mouseenter(function(){
         $('#btn p').text("TATAKAE!");
