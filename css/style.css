@@ -29,7 +29,7 @@ hr {
         font-size: 18pt;
         margin-right: 10%;
     }
-    .menu li {padding: 14px 20px; margin-right: 10%;}
+    .menu li {padding: 14px 20px; margin-right: 10%; color: #fff;}
 
     .menu ul li:hover {
         background-color: #000000;
